@@ -4,13 +4,13 @@ This is a python module (C++ with boost.python) for computing HOG features (*[Da
 
 To compile the module, try something similar to:
 
----
+```
 g++ pyhog.cpp -shared -o pyhog.so -I/usr/include/python2.7 -lpython2.7 -lboost_python -fPIC
----
+```
 
 ## Example
 
-Here's an example of use with numpy. There is no native numpy support for now, so you need to convert the image to a string and then reshape the resulting array.
+Here's an example using numpy. There is no native numpy support for now, so you need to convert the image to a string and then reshape the resulting array.
 
 ```python
 import pyhog
